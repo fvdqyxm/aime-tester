@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 int year;
-char type;
+std::string type;
 using namespace std;
 void case_two();
 void case_one();
@@ -18,7 +18,7 @@ void case_two() {
     cout << "enter number: ";
     int number;
     cin >> number;
-    cout << "reading from: " << to_string(year) + type + "_answers.txt" << endl;
+    /* cout << "reading from: " << to_string(year) + type + "_answers.txt" << endl; */
     /* return; */
     ifstream read(to_string(year) + type + "_answers.txt");
     vector<string> answers;
